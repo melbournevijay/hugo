@@ -1,46 +1,39 @@
-# Hugo template for Netlify CMS with Netlify Identity
+# README
 
-This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
+A barebones starter project and theme for learning Hugo. https://gohugo.io
 
-## Getting started
+**Included:**
 
-Use our deploy button to get your own copy of the repository. 
+- Archetypes for blog articles and default pages.
+- Templates for blog articles and default pages.
+- Shortcodes for the current year and markdown inside HTML.
+- A custom RSS feed that fixes some of the issues with the default Hugo provides.
+- A custom 404 page for easier error page styling.
+- Sample `.active` classes on links to the current page/section in the navigation menus.
+- An automatically updating copyright date in the footer.
+- A skip navigation link in the header.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/one-click-hugo-cms&stack=cms)
+**Not Included:**
 
-This will setup everything needed for running the CMS:
+- CSS
+- JavaScript
+- Support of any kind
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite.
 
-Now you're all set, and you can start editing content!
+## Getting Started
 
-## Local Development
+1. [Install Hugo.](https://gohugo.io/getting-started/installing/)
+2. Download or clone this repository.
+3. In terminal, `cd` into the repository, then run `hugo server`.
+4. Visit the URL Hugo prints in the terminal to see your site.
 
-Clone this repository, and run `yarn` or `npm install` from the new folder to install all required dependencies.
+Now you can make updates to the theme, add content, and so on, and see changes show up live.
 
-Then start the development server with `yarn start` or `npm start`.
 
-## Layouts
 
-The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
+## Get Help
 
-Use Hugo’s `dict` functionality to feed content into partials and avoid repeating yourself and creating discrepancies.
+This starter project is provide as-is to help you experiment with Hugo themes and how it works. Please consult [the official Hugo Documentation](https://gohugo.io/) with any questions.
 
-## CSS
-
-The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
-
-## SVG
-
-All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
-
-```
-<svg width="16px" height="16px" class="db">
-  <use xlink:href="#SVG-ID"></use>
-</svg>
-```
+*__Note:__ if you open GitHub issues for this repo, they will be closed without response.*
